@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cholera</title>
+  <meta name="description" content="Cholera Awareness" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+  <!-- build:css css/styles/app.min.css -->
+  <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles/style.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="css/styles/font.css" type="text/css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+    <!-- aside -->
+    <div id="aside" class="app-aside fade nav-dropdown black">
+      <!-- fluid app aside -->
+      <div class="navside dk" data-layout="column">
+        <div class="navbar no-radius">
+          <!-- brand -->
+			<a href="index.html" class="navbar-brand">
+				<span>Ch</span><i class="fa fa-circle-o text-primary"></i><span>lera</span>
+			</a>
+          <!-- / brand -->
+        </div>
+        <div data-flex class="hide-scroll">
+          <nav class="scroll nav-stacked nav-stacked-rounded nav-color">
+
+            <ul class="nav" data-ui-nav>
+              <li class="nav-header hidden-folded">
+                <span class="text-xs">Main</span>
+              </li>
+              <li>
+                <a href="dashboard.html" class="b-danger">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="ion-filing"></i>
+                  </span>
+                  <span class="nav-text">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="app.project.html" class="b-success">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="ion-android-apps"></i>
+                  </span>
+                  <span class="nav-text">Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="app.message.html" class="b-warning">
+                  <span class="nav-label">
+                    <b class="label label-xs rounded danger"></b>
+                  </span>
+                  <span class="nav-icon text-white no-fade">
+                    <i class="ion-chatbubble-working"></i>
+                  </span>
+                  <span class="nav-text">Info Hub</span>
+                </a>
+              </li>
+              <li>
+                <a href="app.contact.html" class="b-default">
+                  <span class="nav-icon">
+                    <i class="ion-person"></i>
+                  </span>
+                  <span class="nav-text">Contacts</span>
+                </a>
+              </li>
+              <li>
+                <a href="faq.html" class="b-info">
+                  <span class="nav-icon text-white no-fade">
+                    <i class="ion-email"></i>
+                  </span>
+                  <span class="nav-text">FAQ</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- / -->
+
+    <!-- content -->
+  <div id="content" class="app-content box-shadow-z2 pjax-container" role="main">
+    <div class="app-header hidden-lg-up black lt b-b">
+          <div class="navbar" data-pjax>
+                <a data-toggle="modal" data-target="#aside" class="navbar-item pull-left hidden-lg-up p-r m-a-0">
+                  <i class="ion-navicon"></i>
+                </a>
+                <div class="navbar-item pull-left h5" id="pageTitle">Message</div>
+                <!-- nabar right -->
+                <ul class="nav navbar-nav pull-right">
+                  <li class="nav-item dropdown pos-stc-xs">
+                    <a class="nav-link" data-toggle="dropdown">
+                      <i class="ion-android-search w-24"></i>
+                    </a>
+                    <div class="dropdown-menu text-color w-md animated fadeInUp pull-right">
+                      <!-- search form -->
+                      <form class="navbar-form form-inline navbar-item m-a-0 p-x v-m" role="search">
+                        <div class="form-group l-h m-a-0">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search projects...">
+                            <span class="input-group-btn">
+                              <button type="submit" class="btn white b-a no-shadow"><i class="fa fa-search"></i></button>
+                            </span>
+                          </div>
+                        </div>
+                      </form>
+                      <!-- / search form -->
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown pos-stc-xs">
+                    <a class="nav-link clear" data-toggle="dropdown">
+                      <i class="ion-android-notifications-none w-24"></i>
+                      <span class="label up p-a-0 danger"></span>
+                    </a>
+                    <!-- dropdown -->
+                    <div class="dropdown-menu pull-right w-xl animated fadeIn no-bg no-border no-shadow">
+                        <div class="scrollable" style="max-height: 220px">
+                          <ul class="list-group list-group-gap m-a-0">
+                            <li class="list-group-item dark-white box-shadow-z0 b">
+                              <span class="pull-left m-r">
+                                <img src="images/a0.jpg" alt="..." class="w-40 img-circle">
+                              </span>
+                              <span class="clear block">
+                                Use awesome <a href="#" class="text-primary">animate.css</a><br>
+                                <small class="text-muted">10 minutes ago</small>
+                              </span>
+                            </li>
+                            <li class="list-group-item dark-white box-shadow-z0 b">
+                              <span class="pull-left m-r">
+                                <img src="images/a1.jpg" alt="..." class="w-40 img-circle">
+                              </span>
+                              <span class="clear block">
+                                <a href="#" class="text-primary">Joe</a> Added you as friend<br>
+                                <small class="text-muted">2 hours ago</small>
+                              </span>
+                            </li>
+                            <li class="list-group-item dark-white text-color box-shadow-z0 b">
+                              <span class="pull-left m-r">
+                                <img src="images/a2.jpg" alt="..." class="w-40 img-circle">
+                              </span>
+                              <span class="clear block">
+                                <a href="#" class="text-primary">Danie</a> sent you a message<br>
+                                <small class="text-muted">1 day ago</small>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                    <!-- / dropdown -->
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link clear" data-toggle="dropdown">
+                      <span class="avatar w-32">
+                        <img src="images/a3.jpg" class="w-full rounded" alt="...">
+                      </span>
+                    </a>
+                    <div class="dropdown-menu w dropdown-menu-scale pull-right">
+                      <a class="dropdown-item" href="setting.html">
+                        <span>Settings</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="faq.html">
+                        Need help?
+                      </a>
+                      <a class="dropdown-item" href="signin.html">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+                <!-- / navbar right -->
+          </div>
+    </div>
+    <div class="app-body">
+
+<!-- ############ PAGE START-->
+
+<div class="app-body-inner">
+	<div class="row-col">
+		<div class="col-xs-3 w-lg modal fade aside aside-sm" id="list">
+			<div class="row-col success">
+				<!-- header -->
+				<div>
+					<div class="p-a">
+				      	<form>
+				            <div class="input-group input-group-sm p-x-sm dker rounded">
+				              	<input type="text" class="form-control no-bg no-border text-white" placeholder="Search" required="">
+				              	<span class="input-group-btn">
+				                	<button class="btn no-bg no-border no-shadow" type="button"><i class="fa fa-search"></i></button>
+				              	</span>
+				            </div>
+				        </form>
+				    </div>
+				    <div class="nav text-center p-b">
+				    	<a href="#" class="nav-link m-x" data-toggle="tooltip" title="Add Contact"><i class="ion-person-add"></i></a>
+				    	<a href="#" class="nav-link m-x" data-toggle="tooltip" title="Contacts"><i class="ion-person-stalker"></i></a>
+				    	<a href="#" class="nav-link m-x" data-toggle="tooltip" title="Chat"><i class="ion-chatbubble"></i></a>
+				    	<a href="#" class="nav-link m-x" data-toggle="tooltip" title="Location"><i class="ion-location"></i></a>
+				    	<a href="#" class="nav-link m-x" data-toggle="tooltip" title="Plugins"><i class="ion-grid"></i></a>
+				    </div>
+			    </div>
+			    <!-- / -->
+		      	<!-- flex content -->
+		      	<div class="row-row">
+			      	<div class="row-body scrollable hover">
+				      	<div class="row-inner">
+				      		<!-- left content -->
+				      		<div class="list inset" data-ui-list="active">
+				      			<div class="p-x text-dark m-t m-b-sm text-sm">Messages</div>
+				      			    <div class="list-item ">
+				      			      <div class="list-left">
+				      			        <span class="w-40 avatar circle grey">
+				      			          <i class="on b-white avatar-right"></i>
+				      			            <img src="images/a0.jpg" alt=".">
+				      			        </span>
+				      			      </div>
+				      			      <div class="list-body">
+				      			        <div class="item-title">
+				      			          <a href="#" class="_500">User 0</a>
+				      			        </div>
+				      			        <small class="block text-muted text-ellipsis">
+				      			            Send you a message
+				      			        </small>
+				      			      </div>
+				      			    </div>
+				        	
+				        		<div class="p-x text-dark m-t m-b-sm text-sm">Groups</div>
+				        		<div class="list-item">
+			      			      	<div class="list-left">
+				      			        <span class="w-40 avatar circle">
+				      			            <span class="w-40 avatar lter">WG</span>
+				      			        </span>
+			      			      	</div>
+			      			      	<div class="list-body">
+				      			        <a href="#" class="_500">Work group</a>
+				      			        <small class="block text-muted text-ellipsis">
+				      			            32 persons
+				      			        </small>
+			      			      	</div>
+			      			    </div>
+				        	</div>
+				        	<!-- / -->
+				      	</div>
+				    </div>
+		      	</div>
+		      	<!-- / -->
+			    <!-- footer -->
+			    <div class="p-x-md p-y">
+			      	<a class="pull-right btn btn-xs rounded dk">
+			            <i class="fa fa-plus"></i>
+			        </a>
+			      	<span class="text-sm text-muted">Messages: 90+</span>
+			    </div>
+			    <!-- / -->
+		    </div>
+		</div>
+		<div class="col-xs-6" id="detail">
+			<div class="row-col dark-light">
+				<!-- header -->
+				<div class="dark-white b-b">
+					<div class="navbar">
+
+					    <!-- nabar right -->
+					    <ul class="nav navbar-nav pull-right m-l">
+					        <li class="nav-item">
+						        <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Phone Call">
+						            <span class="btn btn-sm btn-icon rounded success">
+							      		<i class="fa fa-phone"></i>
+							        </span>
+						        </a>
+					        </li>
+					        <li class="nav-item">
+						        <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Face Call">
+						            <span class="btn btn-sm btn-icon rounded success">
+							      		<i class="fa fa-video-camera"></i>
+							        </span>
+						        </a>
+					        </li>
+					    </ul>
+					    <!-- / navbar right -->
+
+						<a data-toggle="modal" data-target="#profile" data-ui-modal class="m-r-0 m-l navbar-item pull-right hidden-lg-up">
+							<span class="btn btn-sm btn-icon rounded success">
+					      		<i class="ion-person"></i>
+					        </span>
+					    </a>
+					    <a data-toggle="modal" data-target="#list" data-ui-modal class="navbar-item pull-left hidden-md-up">
+					    	<span class="btn btn-sm btn-icon success">
+					      		<i class="fa fa-list"></i>
+					      	</span>
+					    </a>
+
+				        <span class="navbar-item text-md text-ellipsis">
+				        	User 0
+				        </span>
+					</div>
+				</div>
+				<!-- / -->
+				<!-- flex content -->
+				<div class="row-row">
+					<div class="row-body">
+						<div class="row-inner">
+							<!-- content -->
+							<div class="p-a-md">
+					            <div class="m-b">
+					              <a href="#" class="pull-left w-40 m-r-sm">
+					              	<img src="images/a2.jpg" alt="." class="w-full img-circle">
+					              </a>
+					              <div class="clear">
+					              	<div>
+						                <div class="p-a p-y-sm success inline rounded">
+						                  Hi John, What's up...
+						                </div>
+					                </div>
+					                <div class="m-t-xs">
+						                <div class="p-a p-y-sm success inline rounded">
+						                  hmm...
+						                </div>
+					                </div>
+					                <div class="text-muted text-xs m-t-xs"><i class="fa fa-ok text-success"></i> 2 minutes ago</div>
+					              </div>
+					            </div>
+					            <div class="m-b">
+					              <a href="#" class="pull-right w-40 m-l-sm">
+					              	<img src="images/a0.jpg" class="w-full img-circle" alt=".">
+					              </a>
+					              <div class="clear text-right">
+					                <div class="p-a p-y-sm dark-white inline rounded text-left">
+					                  Lorem ipsum dolor soe rooke..
+					                </div>
+					                <div class="text-muted text-xs m-t-xs">1 minutes ago</div>
+					              </div>
+					            </div>
+					            <div class="m-b">
+					              <a href="#" class="pull-left w-40 m-r-sm">
+					              	<img src="images/a2.jpg" alt="." class="w-full img-circle">
+					              </a>
+					              <div class="clear">
+					                <div class="p-a p-y-sm success inline rounded">
+					                  Good!
+					                </div>
+					                <div class="text-muted text-xs m-t-xs"><i class="fa fa-ok text-success"></i> 5 seconds ago</div>
+					              </div>
+					            </div>
+					            <div class="m-b">
+					              <a href="#" class="pull-right w-40 m-l-sm">
+					              	<img src="images/a0.jpg" class="w-full img-circle" alt=".">
+					              </a>
+					              <div class="clear text-right">
+					              	<div>
+						                <div class="p-a p-y-sm dark-white inline rounded text-left">
+						                  Dlor soe isep slie gosese..
+						                </div>
+					                </div>
+					                <div class="m-t-xs">
+						                <div class="p-a p-y-sm dark-white inline rounded text-left">
+						                  Loris aspim..
+						                </div>
+					                </div>
+					                <div class="text-muted text-xs m-t-xs">3 seconds ago</div>
+					              </div>
+					            </div>
+					            <div class="m-b">
+					              <a href="#" class="pull-left w-40 m-r-sm">
+					              	<img src="images/a2.jpg" alt="." class="w-full img-circle">
+					              </a>
+					              <div class="clear">
+					              	<div>
+						                <div class="p-a p-y-sm success inline rounded text-left">
+						                  Typing...
+						                </div>
+					                </div>
+					                <div class="text-muted text-xs m-t-xs"><i class="fa fa-ok text-success"></i> Just now</div>
+					              </div>
+					            </div>
+					        </div>
+							<!-- / -->
+						</div>
+					</div>
+				</div>
+				<!-- / -->
+				<div class="p-a b-t dark-white">
+				    <form>
+				        <div class="input-group">
+				          	<input type="text" class="form-control" placeholder="Say something">
+				          	<span class="input-group-btn">
+				            	<button class="btn white b-a no-shadow" type="button">
+				            		<i class="fa fa-send text-success"></i>
+				            	</button>
+				          	</span>
+				        </div>
+				    </form>
+				</div>
+		    </div>
+		</div>
+		<div class="col-xs-3 w-md modal fade aside aside-md aside-md-right" id="profile">
+			<div class="row-col dark-white b-l">
+		      	<!-- flex content -->
+		      	<div class="row-row">
+			      	<div class="row-body scrollable hover">
+				      	<div class="row-inner">
+					      	<!-- content -->
+					      	<div class="p-a-lg text-center">
+					      		<img src="images/a2.jpg" class="w-full circle" alt=".">
+					      		<span class="text-md m-t block">User 0</span>
+					      		<small class="text-muted">Info Manager</small>
+					      		<div class="block clearfix m-t">
+					              <a href="#" class="btn btn-icon btn-social rounded btn-sm">
+					                <i class="fa fa-facebook"></i>
+					                <i class="fa fa-facebook indigo"></i>
+					              </a>
+					              <a href="#" class="btn btn-icon btn-social rounded btn-sm">
+					                <i class="fa fa-twitter"></i>
+					                <i class="fa fa-twitter light-blue"></i>
+					              </a>
+					              <a href="#" class="btn btn-icon btn-social rounded btn-sm">
+					                <i class="fa fa-google-plus"></i>
+					                <i class="fa fa-google-plus red"></i>
+					              </a>
+					              <a href="#" class="btn btn-icon btn-social rounded btn-sm">
+					                <i class="fa fa-linkedin"></i>
+					                <i class="fa fa-linkedin cyan-600"></i>
+					              </a>
+					            </div>
+					      	</div>
+							<div class="p-a-md">
+						        <ul class="nav">
+						            <li class="nav-item m-b-xs">
+						              	<a class="nav-link text-muted block">
+						                	<span class="pull-right text-sm">
+						                		<i class="fa fa-fw fa-map-marker"></i>
+						                	</span>
+						                	<span>Freetown</span>
+						              	</a>
+						            </li>
+						            <li class="nav-item m-b-xs">
+						              	<a class="nav-link text-muted block">
+						                	<span class="pull-right text-sm">
+						                		<i class="fa fa-fw fa-phone"></i>
+						                	</span>
+						                	<span>123-456-789</span>
+						              	</a>
+						            </li>
+						            <li class="nav-item m-b-xs">
+						              	<a class="nav-link text-muted block">
+						                	<span class="pull-right text-sm">
+						                		<i class="fa fa-fw fa-birthday-cake"></i>
+						                	</span>
+						                	<span>July 03</span>
+						              	</a>
+						            </li>
+						            <li class="nav-item m-b-xs">
+						              	<a class="nav-link text-muted block">
+						                	<span class="pull-right text-sm">
+						                		<i class="fa fa-fw fa-envelope"></i>
+						                	</span>
+						                	<span>user0@cholera.com</span>
+						              	</a>
+						            </li>
+						        </ul>
+					        </div>
+					        <!-- / -->
+					    </div>
+			      	</div>
+			    </div>
+		      	<!-- / -->
+		    </div>
+		</div>
+	</div>
+</div>
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+<!-- ############ LAYOUT END-->
+  </div>
+
+<!-- build:js scripts/app.min.js -->
+<!-- jQuery -->
+  <script src="libs/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="libs/tether/dist/js/tether.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="libs/PACE/pace.min.js"></script>
+  <script src="libs/jquery-pjax/jquery.pjax.js"></script>
+  <script src="libs/blockUI/jquery.blockUI.js"></script>
+  <script src="libs/jscroll/jquery.jscroll.min.js"></script>
+
+  <script src="scripts/config.lazyload.js"></script>
+  <script src="scripts/ui-load.js"></script>
+  <script src="scripts/ui-jp.js"></script>
+  <script src="scripts/ui-include.js"></script>
+  <script src="scripts/ui-device.js"></script>
+  <script src="scripts/ui-form.js"></script>
+  <script src="scripts/ui-modal.js"></script>
+  <script src="scripts/ui-nav.js"></script>
+  <script src="scripts/ui-list.js"></script>
+  <script src="scripts/ui-screenfull.js"></script>
+  <script src="scripts/ui-scroll-to.js"></script>
+  <script src="scripts/ui-toggle-class.js"></script>
+  <script src="scripts/ui-taburl.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/ajax.js"></script>
+<!-- endbuild -->
+</body>
+</html>
