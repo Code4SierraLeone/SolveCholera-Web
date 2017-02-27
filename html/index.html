@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cholera</title>
+    <meta name="description" content="Cholera Awareness" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+    <!-- build:css css/styles/app.min.css -->
+    <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles/style.css" type="text/css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/styles/font.css" type="text/css" />
+</head>
+
+<body>
+    <div class="app" id="app">
+
+        <!-- ############ LAYOUT START-->
+
+        <div class="p-a black">
+            <div class="navbar" data-pjax>
+                <a data-toggle="collapse" data-target="#navbar" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
+                    <i class="ion-android-menu"></i>
+                </a>
+                <!-- brand -->
+                <a href="index.html" class="navbar-brand">
+                    <span>Ch</span><i class="fa fa-circle-o text-primary"></i><span>lera</span>
+                </a>
+                <!-- / brand -->
+
+                <!-- navbar collapse -->
+                <div class="collapse navbar-toggleable-sm pull-right pull-none-xs" id="navbar">
+                    <!-- link and dropdown -->
+                    <ul class="nav navbar-nav text-info-hover" data-ui-nav>
+                        <li class="nav-item">
+                            <a href="#features" data-ui-scroll-to class="nav-link">
+                                <span class="nav-text">Features</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="signup.html" class="nav-link">
+                                <span class="nav-text text-info">
+                        Sign Up
+                      </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="signin.html" class="nav-link">
+                                <span class="btn btn-md rounded info">
+                        Log in
+                      </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- / link and dropdown -->
+                </div>
+                <!-- / navbar collapse -->
+            </div>
+        </div>
+
+        <!-- content -->
+        <div id="content" class="app-content" role="main">
+            <div class="app-body">
+
+                <!-- ############ PAGE START-->
+
+                <div class="row-col black">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 text-center">
+                        <div class="p-t-lg">
+                            <h1 class="m-y-md text-white">Cholera Awareness</h1>
+                            <h6 class="text-muted m-b-lg">Code for Africa</h6>
+                            <a href="dashboard.html" class="btn btn-lg rounded success p-x-md m-x">View Data</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="black">
+                    <div>
+                        <canvas data-ui-jp="chart" data-ui-options="
+    {
+      type: 'line',
+      data: {
+          labels: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
+          datasets: [
+              {
+                  label: 'Dataset',
+                  data: [35, 30, 28, 32, 25, 22, 19, 30, 35, 41, 35, 40, 42, 45, 43, 50, 52, 55, 65, 60, 62, 60, 70, 77, 85, 100],
+                  fill: true,
+                  lineTension: 0.3,
+                  backgroundColor: '#2196f3',
+                  borderColor: '#41abff',
+                  borderWidth: 3,
+                  pointBorderColor: '#2196f3',
+                  pointBackgroundColor: '#fff',
+                  pointBorderWidth: 2,
+                  pointHoverRadius: 4,
+                  pointHoverBackgroundColor: '#fff',
+                  pointHoverBorderColor: '#fff',
+                  pointHoverBorderWidth: 2,
+                  pointRadius: 0,
+                  pointHitRadius: 10,
+                  spanGaps: false,
+                  barPercentage: 1
+              }
+          ]
+      },
+      options: {
+      		maintainAspectRatio: false,
+	      	scales:{
+		      	xAxes: [{
+		           display: false,
+		           barPercentage: 0.5
+		        }],
+		        yAxes: [{
+		           display: false
+		        }]
+	       	},
+	       	legend:{
+	       		display: false
+	   		},
+	   		tooltips:{
+	   			enabled: false
+	   		}
+      }
+    }
+    " height="280">
+    </canvas>
+                    </div>
+                </div>
+                <div class="row-col info h-v p-t-lg">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <div class="p-a-lg">
+                            <h3 class="m-y-lg">CC</h3>
+                            <p class="text-muted m-b-lg text-md">You can use this platform to find First AID information, Report a Cholera Case...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" style="min-height: 320px; background-image:url(images/dashboard.png); background-size: cover">
+                    </div>
+                </div>
+            </div>
+            <!-- ############ PAGE END-->
+
+        </div>
+    </div>
+    <!-- / -->
+
+    <div class="footer black text-info-hover">
+        <div class="container">
+            <div class="p-y-lg b-b">
+                <a href="faq.html" class="btn info rounded pull-right pull-none-xs">See how..</a>
+                <div class="m-r">
+                    <div class="text-md p-y-sm">Let's save every single life, Do not miss any!</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row p-y-lg">
+                <div class="col-md-5">
+                    <h6 class="text-sm text-u-c m-b text-muted">I'm</h6>
+                    <p>Cholera Police, Here to Save Lives, <br>Made with LOVE &amp; PASSION</p>
+                    <p class="m-t-md text-muted p-r-lg">
+                        <small class="text-muted">You can use this platform to find First AID information, Report a Cholera Case...</small>
+                    </p>
+                    <div class="text-muted m-y-lg">
+                        <h2 class="text-muted _600">
+                            <span class="text-muted">.cholera</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <h6 class="text-sm text-u-c m-b text-muted">Connect</h6>
+                    <div class="m-b-md">
+                        <ul class="nav l-h-2x">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="p-y-lg">
+                <div class="m-b-lg text-sm">
+
+                    <div class="text-muted pull-right pull-none-xs m-b">
+                        <span class="text-muted">Code4Africa &copy; Copyright. All rights reserved.</span>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-sm btn-icon btn-social rounded lt" title="Facebook">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-facebook indigo"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-icon btn-social rounded lt" title="Twitter">
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-twitter light-blue"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-icon btn-social rounded lt" title="Google+">
+                            <i class="fa fa-google-plus"></i>
+                            <i class="fa fa-google-plus red-600"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ############ LAYOUT END-->
+
+    <!-- build:js scripts/app.min.js -->
+    <!-- jQuery -->
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="libs/tether/dist/js/tether.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- core -->
+    <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+    <script src="libs/PACE/pace.min.js"></script>
+    <script src="libs/jquery-pjax/jquery.pjax.js"></script>
+    <script src="libs/blockUI/jquery.blockUI.js"></script>
+    <script src="libs/jscroll/jquery.jscroll.min.js"></script>
+
+    <script src="scripts/config.lazyload.js"></script>
+    <script src="scripts/ui-load.js"></script>
+    <script src="scripts/ui-jp.js"></script>
+    <script src="scripts/ui-include.js"></script>
+    <script src="scripts/ui-device.js"></script>
+    <script src="scripts/ui-form.js"></script>
+    <script src="scripts/ui-modal.js"></script>
+    <script src="scripts/ui-nav.js"></script>
+    <script src="scripts/ui-list.js"></script>
+    <script src="scripts/ui-screenfull.js"></script>
+    <script src="scripts/ui-scroll-to.js"></script>
+    <script src="scripts/ui-toggle-class.js"></script>
+    <script src="scripts/ui-taburl.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/ajax.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
