@@ -30,7 +30,7 @@ angular.module('app')
                     navbarHeaderColor: 'bg-black',
                     navbarCollapseColor: 'bg-white-only',
                     asideColor: 'bg-black',
-                    headerFixed: true,
+                    headerFixed: false,
                     asideFixed: true,
                     asideFolded: false,
                     asideDock: false,

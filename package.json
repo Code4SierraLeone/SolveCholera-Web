@@ -1,13 +1,13 @@
 {
     "name": "Solve Cholera",
-    "version": "1.0",
-    "description": "Solve Cholera",
+    "version": "2.2.0",
+    "description": "Solve Cholera.",
     "scripts": {
         "start": "node node_modules/http-server/bin/http-server -o"
     },
     "keywords": [],
-    "repository": "https://github.com/Code4SierraLeone/SolveCholera.git",
-    "author": "code4africa",
+    "repository": "",
+    "author": "Flatfull",
     "license": "MIT LICENSE",
     "dependencies": {
         "grunt-contrib-cssmin": "^0.14.0",

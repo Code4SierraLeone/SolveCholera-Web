@@ -1,5 +1,5 @@
 <div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
-    app.settings.asideFolded = false; 
+    app.settings.asideFolded = true; 
     app.settings.asideDock = true;
   ">
     <!-- main -->
@@ -29,19 +29,19 @@
         <div class="wrapper-md bg-white-only b-b">
             <div class="row text-center">
                 <div class="col-sm-3 col-xs-6">
-                    <div>Affected <i class="fa fa-fw fa-caret-up text-danger text-sm"></i></div>
+                    <div>Users <i class="fa fa-fw fa-caret-up text-success text-sm"></i></div>
                     <div class="h2 m-b-sm">219k</div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <div>Reported Cases <i class="fa fa-fw fa-caret-down text-warning text-sm"></i></div>
+                    <div>Publications <i class="fa fa-fw fa-caret-down text-warning text-sm"></i></div>
                     <div class="h2 m-b-sm">1230</div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <div>Shared Information <i class="fa fa-fw fa-caret-up text-success text-sm"></i></div>
+                    <div>Solved Cases <i class="fa fa-fw fa-caret-up text-success text-sm"></i></div>
                     <div class="h2 m-b-sm">2839</div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <div>Support Communities <i class="fa fa-fw fa-caret-down text-success text-sm"></i></div>
+                    <div>Newly Reported Cases <i class="fa fa-fw fa-caret-up text-danger text-sm"></i></div>
                     <div class="h2 m-b-sm">2,300</div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <div>Weekly Publishes</div>
+                    <div>Weekly Changes</div>
                     <div ui-jq="easyPieChart" ui-options="{
               percent: 50,
               lineWidth: 4,
@@ -127,26 +127,32 @@
             <ul class="list-group no-bg no-borders pull-in">
                 <li class="list-group-item">
                     <div class="clear">
-                        <div><a href>New Published Fliers</a></div>
-                        <small class="text-muted">Area A</small>
+                        <div><a href>Saved Lives</a></div>
+                        <small class="text-muted">Community A</small>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="clear">
-                        <div><a href>New Recorded Cases</a></div>
-                        <small class="text-muted">Area AV</small>
+                        <div><a href>Newly Reported Cases</a></div>
+                        <small class="text-muted">Community A</small>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="clear">
-                        <div><a href>Reported Cases</a></div>
-                        <small class="text-muted">Area B</small>
+                        <div><a href>Publications</a></div>
+                        <small class="text-muted">Community A</small>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="clear">
-                        <div><a href>Communities Outreached</a></div>
-                        <small class="text-muted">Area AD</small>
+                        <div><a href>Reached Homesteads</a></div>
+                        <small class="text-muted">Community A</small>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="clear">
+                        <div><a href>Heal Training</a></div>
+                        <small class="text-muted">Community A</small>
                     </div>
                 </li>
             </ul>

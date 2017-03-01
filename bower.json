@@ -6,7 +6,7 @@
     "description": "Solve Cholera.",
     "keywords": [],
     "license": "MIT LICENSE",
-    "homepage": "#",
+    "homepage": "",
     "private": true,
     "ignore": [
         "**/.*",
@@ -52,7 +52,7 @@
         "bootstrap-touchspin": "~3.0.1",
         "bootstrap-wysiwyg": "*",
         "bower-jvectormap": "~1.2.2",
-        "chosen": "#",
+        "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.3.0/chosen_v1.3.0.zip",
         "datatables": "~1.10.4",
         "flot": "~0.8.3",
         "flot-spline": "*",
