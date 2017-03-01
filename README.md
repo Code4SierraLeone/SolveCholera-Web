@@ -1,1 +1,0 @@
-## Solve Cholera Campaign
