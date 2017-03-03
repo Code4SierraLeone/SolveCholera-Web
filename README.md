@@ -7,6 +7,7 @@ For the User Interface Design and Logic Implementation, I have used the followin
 * `Inforgraphs and Media Data`
 * `Firebase`(Authentication and Real-Time Database)
 * `NodeJS` (Logic)
+* Twilio (SMS)
 
 ## Main Features
 
