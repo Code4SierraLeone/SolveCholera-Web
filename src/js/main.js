@@ -13,6 +13,10 @@ angular.module('app')
             // config
             $scope.app = {
                 name: 'Solve Cholera',
+                prevention: 'Cholera Prevention Measures',
+                cause: 'Causes of Cholera',
+                treat: 'Cholera Treatment',
+                signs: 'Signs & Symptoms',
                 version: '1.0',
                 // for chart colors
                 color: {
