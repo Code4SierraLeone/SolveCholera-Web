@@ -216,9 +216,9 @@ angular.module('app')
                   url: '/profile',
                   templateUrl: 'tpl/page_profile.html'
               })
-              .state('app.page.post', {
-                  url: '/post',
-                  templateUrl: 'tpl/page_post.html'
+              .state('app.page.prevention', {
+                  url: '/prevention',
+                  templateUrl: 'tpl/page_prevention.html'
               })
               .state('app.page.cause', {
                   url: '/cause',
