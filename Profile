@@ -1,1 +1,1 @@
-web: node GruntFile.js
+web: node web.js
