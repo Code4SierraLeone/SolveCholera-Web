@@ -221,12 +221,16 @@ angular.module('app')
                   templateUrl: 'tpl/page_post.html'
               })
               .state('app.page.cause', {
-                  url: '/post',
+                  url: '/cause',
                   templateUrl: 'tpl/page_cause.html'
               })
               .state('app.page.signs', {
-                  url: '/post',
+                  url: '/signs',
                   templateUrl: 'tpl/page_signs.html'
+              })
+              .state('app.page.treat', {
+                  url: '/treat',
+                  templateUrl: 'tpl/page_treat.html'
               })
               .state('app.page.search', {
                   url: '/search',
