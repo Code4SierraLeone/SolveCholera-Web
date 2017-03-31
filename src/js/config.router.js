@@ -220,6 +220,10 @@ angular.module('app')
                   url: '/post',
                   templateUrl: 'tpl/page_post.html'
               })
+              .state('app.page.cause', {
+                  url: '/post',
+                  templateUrl: 'tpl/page_cause.html'
+              })
               .state('app.page.search', {
                   url: '/search',
                   templateUrl: 'tpl/page_search.html'
