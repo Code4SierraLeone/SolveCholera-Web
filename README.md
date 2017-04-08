@@ -3,11 +3,9 @@
 A cross platform tool that aims to provide awareness and disseminate sensitization information regarding cholera in an interactive and intuitive manner
 
 For the User Interface Design and Logic Implementation, I have used the following packages.
-*  `AngularJS
+*  `AngularJS`
 * `Inforgraphs and Media Data`
-* `Firebase`(Authentication and Real-Time Database)
-* `NodeJS` (Logic)
-* `Twilio` (SMS)
+* `Twilio` (SMS) - incebox
 
 ### Main Features
 
@@ -52,7 +50,6 @@ We've made it easy to develop and test on your local machine. Once you've instal
 
 All jQuery plugins are depended on `ui-jq`, no need to create the Angular Directive for each of the plugin. you can config in the js/app.js Angular Constant `JQ_CONFIG`, `functionName => pluginPath`, the js and css files are lazy loaded.
 
-* Flotchart
 * Sparklines
 * Datatables
 * Chosen
@@ -77,4 +74,16 @@ uiLoad.load( ['path/style.css', 'path/script.js'] ).then(function() {
 // There was some error loading the files.
 });
 ```
+
+### Inforgraphics
+
+The web-app aims at offering informative graphics to outline the following
+1. Main Cholera Causes
+2. Symptoms of Cholera
+3. Best Practises to Chorela Prevention
+4. First Aid Measures
+5. Statistical Informtion on 
+    * Effects of Cholera to the community
+    * Affected Community Groups/Locations
+    * Cholera Curbing Statistics
 
