@@ -45,40 +45,6 @@ angular.module('app')
                   url: '/ui',
                   template: '<div ui-view class="fade-in-up"></div>'
               })
-              .state('app.ui.grid', {
-                  url: '/grid',
-                  templateUrl: 'tpl/ui_grid.html'
-              })
-              .state('app.ui.widgets', {
-                  url: '/widgets',
-                  templateUrl: 'tpl/ui_widgets.html'
-              })          
-              .state('app.ui.bootstrap', {
-                  url: '/bootstrap',
-                  templateUrl: 'tpl/ui_bootstrap.html'
-              })
-              .state('app.ui.sortable', {
-                  url: '/sortable',
-                  templateUrl: 'tpl/ui_sortable.html'
-              })
-              .state('app.ui.scroll', {
-                  url: '/scroll',
-                  templateUrl: 'tpl/ui_scroll.html',
-                  resolve: load('js/controllers/scroll.js')
-              })
-              .state('app.ui.portlet', {
-                  url: '/portlet',
-                  templateUrl: 'tpl/ui_portlet.html'
-              })
-              .state('app.ui.timeline', {
-                  url: '/timeline',
-                  templateUrl: 'tpl/ui_timeline.html'
-              })
-              .state('app.ui.toaster', {
-                  url: '/toaster',
-                  templateUrl: 'tpl/ui_toaster.html',
-                  resolve: load(['toaster', 'js/controllers/toaster.js'])
-              })
               .state('app.chart', {
                   url: '/chart',
                   templateUrl: 'tpl/ui_chart.html',
@@ -125,14 +91,6 @@ angular.module('app')
                   url: '/search',
                   templateUrl: 'tpl/page_search.html'
               })
-              .state('app.page.invoice', {
-                  url: '/invoice',
-                  templateUrl: 'tpl/page_invoice.html'
-              })
-              .state('app.page.price', {
-                  url: '/price',
-                  templateUrl: 'tpl/page_price.html'
-              })
               .state('app.docs', {
                   url: '/docs',
                   templateUrl: 'tpl/docs.html'
@@ -163,14 +121,6 @@ angular.module('app')
               .state('access.404', {
                   url: '/404',
                   templateUrl: 'tpl/page_404.html'
-              })
-
-              // fullCalendar
-              .state('app.calendar', {
-                  url: '/calendar',
-                  templateUrl: 'tpl/app_calendar.html',
-                  // use resolve to load other dependences
-                  resolve: load(['moment','fullcalendar','ui.calendar','js/app/calendar/calendar.js'])
               })
 
               .state('layout', {
