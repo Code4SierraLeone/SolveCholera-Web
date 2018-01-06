@@ -1,4 +1,4 @@
-# Solve Chorela
+# Solve Cholera
 [Download](https://github.com/liveblog/liveblog/archive/master.zip) •
 [Fork](https://github.com/Code4SierraLeone/SolveCholera-Web) •
 [License](https://github.com/Code4SierraLeone/SolveCholera-Web/blob/master/LICENSE) •
@@ -6,7 +6,7 @@
 
 ## Installation
 
-### How to install Solve-Chorela locally (recommended)
+### How to install Solve-Cholera locally (recommended)
 
 Here I'm assuming you are running Ubuntu Linux 16.04 
 

@@ -1,5 +1,5 @@
-# Solve-Chorela Client
-Solve-Chorela Client is a javascript client for Solve-Chorela REST API server.
+# Solve-Cholera Client
+Solve-Cholera Client is a javascript client for Solve-Cholera REST API server.
 
 ## Setup
 
@@ -17,8 +17,8 @@ grunt server
 This also will start frontend on localhost:9000.
 Change `http://localhost:5000` to an actual backend server.
 ```
-docker build -t Solve-Chorela-client:devel ./
-docker run -i -p 9000:9000 -t Solve-Chorela-client:devel grunt server --server=http://localhost:5000 --force
+docker build -t Solve-Cholera-client:devel ./
+docker run -i -p 9000:9000 -t Solve-Cholera-client:devel grunt server --server=http://localhost:5000 --force
 ```
 
 Also u can start it with default parameters using vagrant:
@@ -42,7 +42,7 @@ JIRA ref]
 
 Where [JIRA ref](https://confluence.atlassian.com/display/FISHEYE/Using+smart+commits) is at least Issue code eg. ```LBSD-13```.
 
-For trivial changes you can ommit JIRA ref or Description or both: ```Fix typo in Solve-Chorela.translate docs.```
+For trivial changes you can ommit JIRA ref or Description or both: ```Fix typo in Solve-Cholera.translate docs.```
 
 ### CI
 

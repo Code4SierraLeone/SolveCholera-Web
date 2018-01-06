@@ -1,10 +1,10 @@
-# Solve-Chorela Server
+# Solve-Cholera Server
 
-Solve-Chorela Server provides a REST API server for [Solve-Chorela project](https://wiki.sourcefabric.org/display/LB/Live+Blog).
+Solve-Cholera Server provides a REST API server for [Solve-Cholera project](https://wiki.sourcefabric.org/display/LB/Live+Blog).
 It's a python app, built on top of [eve](http://python-eve.org/)/[flask](http://flask.pocoo.org/) framework.
 
 Some basic infrastructure and apps(authentication, users, archive, notifications, activity, preferences) are used from [Superdesk project](https://wiki.sourcefabric.org/display/NR/Superdesk+Home).
-The application is focused implementing the Solve-Chorela custom apps like blog management, blog posts and ingest from different sources.
+The application is focused implementing the Solve-Cholera custom apps like blog management, blog posts and ingest from different sources.
 
 ## Requirements
 
@@ -87,7 +87,7 @@ $ honcho start
 
 ### API Documentation
 
-You can see API Documentation on [apiary](http://docs.Solve-Chorela.apiary.io/).
+You can see API Documentation on [apiary](http://docs.Solve-Cholera.apiary.io/).
 
 ## Running cli commands
 
