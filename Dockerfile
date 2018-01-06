@@ -33,6 +33,7 @@ CMD /opt/superdesk/start.sh
 # client ports
 EXPOSE 9000
 EXPOSE 80
+
 # server ports
 EXPOSE 5000
 EXPOSE 5100
