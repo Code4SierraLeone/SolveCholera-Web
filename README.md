@@ -3,6 +3,8 @@
 [Fork](https://github.com/Code4SierraLeone/SolveCholera-Web) •
 [License](https://github.com/Code4SierraLeone/SolveCholera-Web/blob/master/LICENSE) •
 
+[![Build Status](https://api.travis-ci.org/Code4SierraLeone/SolveCholera-Web.svg?branch=master)](https://travis-ci.org/Code4SierraLeone/SolveCholera-Web)
+
 
 ## Installation
 
