@@ -1,4 +1,4 @@
-# Solve Cholera Content Management
+# Section I Solve Cholera Content Management
 [Download](https://github.com/liveblog/liveblog/archive/master.zip) •
 [Fork](https://github.com/Code4SierraLeone/SolveCholera-Web) •
 [License](https://github.com/Code4SierraLeone/SolveCholera-Web/blob/master/LICENSE) •
@@ -203,7 +203,7 @@ grunt build --force
 grunt connect:build
 ```
 
-# Dash - For Solve Cholera Data Visualization
+# Section II Dash - For Solve Cholera Data Visualization
 
 #### Dash is a Python framework for building analytical web applications. No JavaScript required. This is the framework we intent to use for Visualising Cholera Statistical Data on the Browser.
 
