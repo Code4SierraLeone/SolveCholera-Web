@@ -1,9 +1,9 @@
 {
-  "name": "liveblog",
-  "version": "3.3.4",
+  "name": "solve-cholera",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:liveblog/liveblog.git"
+    "url": "git@github.com:Code4SierraLeone/SolveCholera-Web.git"
   },
   "licenses": [
     {
